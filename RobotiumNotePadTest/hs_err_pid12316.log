@@ -1,0 +1,110 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=12316, tid=20324
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_09-b05
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.5-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000217d000):  JavaThread "Unknown thread" [_thread_in_vm, id=20324, stack(0x0000000002300000,0x0000000002400000)]
+
+Stack: [0x0000000002300000,0x0000000002400000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000217d000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=20324, stack(0x0000000002300000,0x0000000002400000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.084 loading class 0x00000000022391f0 done
+Event: 0.084 loading class 0x00000000021f2d50 done
+Event: 0.084 loading class 0x00000000021f2d20
+Event: 0.084 loading class 0x0000000002243ee0
+Event: 0.084 loading class 0x0000000002243ee0 done
+Event: 0.084 loading class 0x0000000002243f20
+Event: 0.084 loading class 0x0000000002243f20 done
+Event: 0.084 loading class 0x0000000011205b40
+Event: 0.084 loading class 0x0000000011205b40 done
+Event: 0.084 loading class 0x00000000021f2d20 done
+
+
+Dynamic libraries:
+0x000000013fe60000 - 0x000000013fe94000 	D:\Program Files\Java\jre7\bin\javaw.exe
+0x0000000077420000 - 0x00000000775c8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077300000 - 0x000000007741f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd410000 - 0x000007fefd47c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe020000 - 0x000007fefe0fb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefef90000 - 0x000007feff02f000 	C:\Windows\system32\msvcrt.dll
+0x000007feff140000 - 0x000007feff15f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefda60000 - 0x000007fefdb8d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077200000 - 0x00000000772fa000 	C:\Windows\system32\USER32.dll
+0x000007feff160000 - 0x000007feff1c7000 	C:\Windows\system32\GDI32.dll
+0x000007feff030000 - 0x000007feff03e000 	C:\Windows\system32\LPK.dll
+0x000007fefd910000 - 0x000007fefd9d9000 	C:\Windows\system32\USP10.dll
+0x000007fefbc60000 - 0x000007fefbe54000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18807_none_fa381d5f175bfb52\COMCTL32.dll
+0x000007fefd9e0000 - 0x000007fefda51000 	C:\Windows\system32\SHLWAPI.dll
+0x000007feff680000 - 0x000007feff6ae000 	C:\Windows\system32\IMM32.DLL
+0x000007feff570000 - 0x000007feff679000 	C:\Windows\system32\MSCTF.dll
+0x000000006f8d0000 - 0x000000006f9a1000 	D:\Program Files\Java\jre7\bin\msvcr100.dll
+0x000000006ed70000 - 0x000000006f48f000 	D:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fef4780000 - 0x000007fef4789000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefef40000 - 0x000007fefef8d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefee90000 - 0x000007fefee98000 	C:\Windows\system32\NSI.dll
+0x000007fefaa90000 - 0x000007fefaacb000 	C:\Windows\system32\WINMM.dll
+0x00000000775f0000 - 0x00000000775f7000 	C:\Windows\system32\PSAPI.DLL
+0x000000006f8c0000 - 0x000000006f8cf000 	D:\Program Files\Java\jre7\bin\verify.dll
+0x000000006f890000 - 0x000000006f8b8000 	D:\Program Files\Java\jre7\bin\java.dll
+0x000000006f870000 - 0x000000006f885000 	D:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\Program Files (x86)\Android\android-sdk\platforms\android-22\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 49883 -testLoaderClass org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader -loaderpluginname org.eclipse.jdt.junit.runtime -classNames com.robotium.test.NotePadTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Java\jdk1.7.0_09
+CLASSPATH=.;D:\Program Files\Java\jdk1.7.0_09\lib\dt.jar;D:\Program Files\Java\jdk1.7.0_09\lib\tools.jar;D:\Tools\apache-tomcat-7.0.0\lib;D:\Tools_Ant_Etc\ant\lib;D:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 11.1.3\lib\annotations.jar
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\Windows Live\Shared;D:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.7.0_09\bin;D:\Tools_Ant_Etc\ant\bin;D:\Tools_Ant_Etc\ant\lib;D:\Program Files (x86)\GnuWin32\bin;D:\Softwares\instantclient_11_2;C:\Program Files\Microsoft\Web Platform Installer\;D:\tools\Vagrant\bin;D:\Program Files (x86)\GitExtensions\;D:\Program Files (x86)\Git\cmd;D:\Program Files (x86)\Git\bin;D:\Python27;D:\Python27\Scripts;D:\webServers\apache-maven-3.3.3\bin;0x0.000000p-1022ndroid_sdk_home;D:\Program Files (x86)\Android\android-sdk\tools;D:\Program Files (x86)\Android\android-sdk\platform-tools;D:\Program Files (x86)\Android\android-sdk\build-tools\22.0.1;D:\Program Files\nodejs\;C:\Users\lyue\AppData\Roaming\npm
+USERNAME=lyue
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 16733236k(4630784k free), swap 20827384k(6335352k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.5-b02) for windows-amd64 JRE (1.7.0_09-b05), built on Sep 24 2012 21:45:04 by "java_re" with unknown MS VC++:1600
+
+time: Fri Sep 25 09:47:45 2015
+elapsed time: 0 seconds
+
